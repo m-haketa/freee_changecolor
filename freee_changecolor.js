@@ -10,7 +10,9 @@
 
 (function() {
   "use strict";
-  var getClass = function (string) { return document.querySelectorAll(string) };
+  var getClass = function(string) {
+    return document.querySelectorAll(string);
+  };
 
   var changeStyleList = [
     {
@@ -31,12 +33,15 @@
   ];
 
   function setStyle(elements, stylename, value) {
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style[stylename] = value;
-    }
+    console.log("setStyle");
+    elements.forEach(function(element) {
+      element.style[stylename] = value;
+      console.log(element);
+    });
   }
 
   function changeColor() {
+    console.log("changeColor");
     changeStyleList.forEach(function(styleData) {
       setStyle(styleData.elements, styleData.stylename, styleData.value);
     });
