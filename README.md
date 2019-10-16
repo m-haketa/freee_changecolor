@@ -13,7 +13,8 @@ HTMLを見て、下記classの背景色を薄ピンク色（#f5dede）に修正�
 [tampermonkey](http://tampermonkey.net/)を入れたブラウザで、
 
 
-tampermonkeyを起動し「新規スクリプトを追加」から、下記のソースコードを貼り付けて、保存してください。
+下記をクリックすると、tampermonkeyにソースコードが読み込まれます。
+そのまま、保存してください。
 
 [freee_changecolor.js](https://raw.githubusercontent.com/m-haketa/freee_changecolor/master/freee_changecolor.user.js)
 
