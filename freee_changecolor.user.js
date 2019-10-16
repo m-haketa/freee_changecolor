@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Freee_ChangeColor
 // @namespace    http://gas.excelspeedup.com/
-// @version      0.2
+// @version      0.22
 // @description  freeeの色を変える
 // @author       m-haketa
 // @match        https://secure.freee.co.jp/*
