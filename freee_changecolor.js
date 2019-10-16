@@ -10,21 +10,21 @@
 
 (function() {
   "use strict";
-  var getClass = function (string) { return document.getElementsByClassName(string) };
+  var getClass = function (string) { return document.querySelectorAll(string) };
 
   var changeStyleList = [
     {
-      elements: getClass("tags-combobox__tagify-tag--partner"),
+      elements: getClass(".tags-combobox__tagify-tag--partner"),
       stylename: "backgroundColor",
       value: "#f5dede"
     },
     {
-      elements: getClass("expense"),
+      elements: getClass(".expense"),
       stylename: "backgroundColor",
       value: "#f5dede"
     },
     {
-      elements: getClass("tagify-tag-bg-partner"),
+      elements: getClass(".tagify-tag-bg-partner"),
       stylename: "backgroundColor",
       value: "#f5dede"
     }
