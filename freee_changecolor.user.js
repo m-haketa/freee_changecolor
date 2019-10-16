@@ -10,40 +10,38 @@
 
 (function() {
   "use strict";
-  var getClass = function(string) {
+  var getElement = function(string) {
     return document.querySelectorAll(string);
   };
 
   var changeStyleList = [
     {
-      elements: getClass(".tags-combobox__tagify-tag--partner"),
+      selector: ".tags-combobox__tagify-tag--partner",
       stylename: "backgroundColor",
       value: "#f5dede"
     },
     {
-      elements: getClass(".expense"),
+      selector: ".expense",
       stylename: "backgroundColor",
       value: "#f5dede"
     },
     {
-      elements: getClass(".tagify-tag-bg-partner"),
+      selector: ".tagify-tag-bg-partner",
       stylename: "backgroundColor",
       value: "#f5dede"
     }
   ];
 
-  function setStyle(elements, stylename, value) {
-    console.log("setStyle");
-    elements.forEach(function(element) {
+  function setStyle(selector, stylename, value) {
+    getElement(selector).forEach(function(element) {
       element.style[stylename] = value;
       console.log(element);
     });
   }
 
   function changeColor() {
-    console.log("changeColor");
     changeStyleList.forEach(function(styleData) {
-      setStyle(styleData.elements, styleData.stylename, styleData.value);
+      setStyle(styleData.selector, styleData.stylename, styleData.value);
     });
   }
 
