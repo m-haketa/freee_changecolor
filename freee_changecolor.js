@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Freee_ChangeColor
 // @namespace    http://gas.excelspeedup.com/
-// @version      0.2
+// @version      0.21
 // @description  freeeの色を変える
 // @author       m-haketa
 // @match        https://secure.freee.co.jp/*
@@ -22,6 +22,11 @@
       elements: getClass("expense"),
       stylename: "backgroundColor",
       value: "#f5dede"
+    },
+    {
+      elements: getClass("input-account-item expense freee-combobox"),
+      stylename: "backgroundColor",
+      value: "#ffffff"
     },
     {
       elements: getClass("tagify-tag-bg-partner"),
