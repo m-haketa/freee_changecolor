@@ -21,14 +21,19 @@
       value: "#f5dede"
     },
     {
+      selector: ".tagify-tag-bg-partner",
+      stylename: "backgroundColor",
+      value: "#f5dede"
+    },
+    {
       selector: ".expense",
       stylename: "backgroundColor",
       value: "#f5dede"
     },
     {
-      selector: ".tagify-tag-bg-partner",
+      selector: ".input-account-item",
       stylename: "backgroundColor",
-      value: "#f5dede"
+      value: "#ffffff"
     }
   ];
 
